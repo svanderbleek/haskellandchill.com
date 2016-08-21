@@ -1,4 +1,4 @@
-# haskellandchill.com
+# about
 
 hi I want to talk about programming as mathematics
 
