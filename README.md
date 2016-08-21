@@ -2,7 +2,7 @@
 
 hi I want to talk about programming as mathematics
 
-or mathematics as programming ¯\\_(ツ)_/¯
+or mathematics as programming
 
 
 # reading
