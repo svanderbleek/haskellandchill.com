@@ -2,12 +2,12 @@
 
 hi I want to talk about programming as mathematics
 
-or mathematics as programming ¯\_(ツ)_/¯
+or mathematics as programming ¯\\_(ツ)_/¯
 
 
-# current reading
+# reading
 
-sets for mathematics
-algebra of programming
-from mathematics to generic programming
-burn math class
+* burn math class
+* sets for mathematics
+* algebra of programming
+* from mathematics to generic programming
