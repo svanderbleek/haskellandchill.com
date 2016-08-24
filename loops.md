@@ -29,7 +29,7 @@ require only a mind-bendingly simple bit of theory.
 
 # Fixpoints
 
-To work in theory of fixpoints we need the concept of an ordering, the simple intuition for the positive integers under `<` is sufficient. An arbitrary set can be mapped into an ordered set using a function, these functions can then be ordered based on their values at each element of the domain.
+To work in theory of fixpoints we need the concept of an ordering, the simple intuition for the positive integers under `<` is sufficient, we will overload this operator to mean subset or whichever simple ordering we are dealing with. An arbitrary set can be mapped into an ordered set using a function, these functions can then be ordered based on their values at each element of the domain.
 
 ```
 f < g ~ forall x. f x < g x
