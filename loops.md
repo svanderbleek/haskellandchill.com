@@ -25,7 +25,7 @@ iterations. When recursion only depends on the previous iteration it is the same
 
 Recursion can be described with reuse of a function through name,
 which requires operational concepts to treat rigourously, or through fixpoints, which
-require only a mind-bendingly simple bit of theory.
+require only a mind-bending but simple bit of theory.
 
 # Fixpoints
 
