@@ -6,11 +6,14 @@ We care about quality, but there are many ways to approach quality. An individua
 
 > These "craftsmen" would have been surprised to learn that they were actually doing the work of Henry Ford's fitters in 1905 (2)
 
-blah
+agile gets some parts of this relationship right but focuses on client and provider
+we need provider to provider relationships as well, we are all clients for the software we use to build our software
+by developing a consumer provider network, where we are flexible in our roles, sometimes consumer sometimes provider, we can reduce rework/defect rates, and actually work together to build things
 
 > adjusting off-standard parts, fine-tuning parts designed so as to need adjustment, and rectifying incorrect previous assembly work so that everything would work properly in the end. (3)
 
-blah
+it’s not necessarily increasing the level, but finding the right abstraction, because our contracts between each other aren’t working
+I take your react module and have to custom fit it, I’ve already lost, we’ve lost together
 
 1. The Machine That Changed the World: The Story of Lean Production
 2. "
