@@ -4,21 +4,21 @@ Let's talk about loops. We are going to approach the problem very generally and 
 
 # Iteration and Recursion
 
-We can describe a loop iteratively or recursively.
+We can describe a loop iteratively or recursively and for simple loops it is easy to see their equivalence.
 
 ```
-a i = i
-f (a, i) = a i * a (i - 1)
+f (n, s, 0) = f (n - 1, n * s, 0)
+f (1, s, 0) = f (1, s, 1)
+f (_, s, 1) = s
 ```
 
-```
-f (n > 0) = n * f (n - 1)
-f 0 =  1
-```
-
-Iteration follows our intuition for looping. We take a set of instructions and repeat them
-until we reach a desired condition. The instructions are a function of arguments that we may
+Here we iterate f repeatedly on a state `(Int, Int, Bool)` until we meet our condition and flip the `Bool` to signal completion, returning the accumulated `s` which is the factorial.Iteration follows our intuition for looping. We take a set of instructions and repeat them until we reach a desired condition. The instructions are a function of arguments that we may
 transform with each iteration.
+
+```
+f n = n * f (n - 1)
+f 0 = 1
+```
 
 Recursion is more general than iteration and describes instructions that can depend on the results of additional
 iterations. When recursion only depends on the previous iteration it is the same as the iterative method of argument transformation until a condition is met.
