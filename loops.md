@@ -29,14 +29,18 @@ require only a mind-bendingly simple bit of theory.
 
 # Fixpoints
 
-To work in theory of fixpoints we need the concept of an ordering, the simple intuition for the positive integers under `<` is sufficient, we will overload this operator to mean subset or whichever simple ordering we are dealing with. An arbitrary set can be mapped into an ordered set using a function, these functions can then be ordered based on their values at each element of the domain.
+To work in theory of fixpoints we need the concept of an ordering, the simple intuition for the positive integers under `<` is sufficient. We will overload this operator to mean subset or whichever ordering we are dealing with. We explicitly work with positive integers to give ourselves a well-founded base case, `0`; ie an element at the bottom of our ordering (for sets this is the empty set). 
+
+An arbitrary domain can be mapped into an ordered codomain using a function `f : D -> O`, the class of these functions can then be ordered based on their values in the codomain over each point in domain.
 
 ```
 f < g ~ forall x. f x < g x
 ```
 
-Functions can also be ordered by the set of values they are defined on using subset relations over the domain.
+Partial functions can also be ordered by the set of values they are defined on using subset relations over the domain.
 
 ```
-f < g ~ x. f x < y. f y
+f < g ~ all x. f x < all y. f y
 ```
+
+We use `~` to denote a non-rigourous presentation of an is-equivalent definition, and `quantifier variable. condition` to do things like assert `forall`, `exists`, or collect `all`, `some`, or `one` elements satisfying the condition.
