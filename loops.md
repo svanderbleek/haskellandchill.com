@@ -38,5 +38,5 @@ f < g ~ forall x. f x < g x
 Functions can also be ordered by the set of values they are defined on using subset relations over the domain.
 
 ```
-f < g ~ x. exists f x < y. exists f y
+f < g ~ x. f x < y. f y
 ```
