@@ -11,3 +11,12 @@ Mu operator, yes
 fix : (a -> a) -> a
 ```
 
+The tautological defintion
+
+```
+fix f = f (fix f)
+```
+
+surprisingly works
+
+# Order and Recursion
