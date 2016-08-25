@@ -34,13 +34,13 @@ To work in theory of fixpoints we need the concept of an ordering, the simple in
 An arbitrary domain can be mapped into an ordered codomain using a function `f : D -> O`, the class of these functions can then be ordered based on their values in the codomain over each point in domain.
 
 ```
-f < g ~ forall x. f x < g x
+f < g ~ forall x. (f x < g x)
 ```
 
 Partial functions can also be ordered by the set of values they are defined on using subset relations over the domain.
 
 ```
-f < g ~ all x. f x < all y. f y
+f < g ~ (x. f x) < (y. f y)
 ```
 
-We use `~` to denote a non-rigourous presentation of an is-equivalent definition, and `quantifier variable. condition` to do things like assert `forall`, `exists`, or collect `all`, `some`, or `one` elements satisfying the condition.
+We use `~` to denote a non-rigourous presentation of an is-equivalent definition, and `quantifier variable. condition` to do things like assert `forall`, `exists`, or collect simply collect all of `variable. conditition` such that the condition is met.
