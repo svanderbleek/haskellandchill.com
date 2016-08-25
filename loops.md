@@ -43,4 +43,4 @@ Partial functions can also be ordered by the set of values they are defined on u
 f < g ~ (x. f x) < (y. f y)
 ```
 
-We use `~` to denote a non-rigourous presentation of an is-equivalent definition, and `quantifier variable. condition` to do things like assert `forall`, `exists`, or collect simply collect all of `variable. conditition` such that the condition is met.
+We use `~` to denote a definition, and `quantifier variable. condition` to do things like assert `forall`, `exists`, or  simply collect all when no quantifier is present.
