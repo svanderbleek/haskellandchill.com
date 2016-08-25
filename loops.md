@@ -1,5 +1,3 @@
-# Loops
-
 Let's talk about loops. We are going to approach the problem very generally and build our machinery as we go.
 
 ## Iteration and Recursion
