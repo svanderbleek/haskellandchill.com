@@ -2,7 +2,7 @@
 
 Let's talk about loops. We are going to approach the problem very generally and build our machinery as we go.
 
-# Iteration and Recursion
+## Iteration and Recursion
 
 We can describe a loop iteratively or recursively and for simple loops it is easy to see their equivalence.
 
@@ -25,7 +25,7 @@ iterations. When recursion only depends on the previous iteration it is the same
 
 Recursion can be described with reuse of a function through name, which requires operational concepts to treat rigourously, or through fixpoints, which require only a mind-bending but simple bit of theory.
 
-# Fixpoints
+## Fixpoints
 
 To work in theory of fixpoints we need the concept of an order, intuition for the positive integers under `<` is sufficient. We will use '<' to mean whichever order we are dealing with. We explicitly work with orders like the positive integers to give ourselves a well-founded base case like `0`. At the bottom of sets under subset order it would be the empty set). 
 
