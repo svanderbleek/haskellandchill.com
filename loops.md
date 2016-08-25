@@ -21,7 +21,7 @@ f 0 = 1
 ```
 
 Recursion is more general than iteration and describes instructions that can depend on the results of additional
-iterations. When recursion only depends on the previous iteration it is the same as the iterative method of argument transformation until a condition is met.
+iterations. When recursion only depends on the previous iteration it is the same as the iterative method of argument transformation until a condition is met. Recursion can be modeled with iteration and there is an isomorphism that may be noncomputable.
 
 Recursion can be described with reuse of a function through name, which requires operational concepts to treat rigourously, or through fixpoints, which require only a mind-bending but simple bit of theory.
 
