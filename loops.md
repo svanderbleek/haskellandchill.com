@@ -7,8 +7,8 @@ Let's talk about loops. We are going to approach the problem very generally and 
 We can describe a loop iteratively or recursively and for simple loops it is easy to see their equivalence.
 
 ```
-f (n, s, 0) = f (n - 1, n * s, 0)
-f (1, s, 0) = f (1, s, 1)
+f (n, s, 0) = (n - 1, n * s, 0)
+f (1, s, 0) = (1, s, 1)
 f (_, s, 1) = (_, s, 1)
 ```
 
