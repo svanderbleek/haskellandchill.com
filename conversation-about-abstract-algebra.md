@@ -5,7 +5,7 @@ my dad told me an interesting interview question that would trip up some people 
 the question was:
 
 [5:30]  
-why does -1 * -1 = 1 ?
+why does `-1 * -1 = 1` ?
 
 jonschoning [5:30 PM]  
 because we said so
@@ -23,7 +23,7 @@ jonschoning [5:31 PM]
 a 'why' question in mathematics actually keeps rolling back until we get to axioms
 
 haskellandchill [5:32 PM]  
-yeah u would say what properties of ‘*’ and ‘-‘ you want and why that is the result
+yeah u would say what properties of `*` and `-` you want and why that is the result
 
 risto [5:33 PM]  
 @haskellandchill that's a very haskell and chill answer :sunglasses:
@@ -33,7 +33,8 @@ I don't actually know the group laws from memory haha
 
 haskellandchill [5:47 PM]  
 `-` is inverse of `+` which `*` distributes with id `1`:
-```1 + -1 = 0
+```
+1 + -1 = 0
 -1 * 1 = -1
 -1 * 0 = 0
 -1 * (1 + -1) = -1 * 0 = 0
@@ -73,7 +74,7 @@ it can be done better, for a more general result
 I used all concrete elements (edited)
 
 lightandlight [5:57 PM]  
-Show -1 * b = -b
+Show `-1 * b = -b`
 
 risto [5:58 PM]  
 @haskellandchill I think you're on the right track though, it has to do with distribution of multiplication
@@ -82,7 +83,7 @@ jonschoning [5:59 PM]
 Multiplication is division by the reciprocal, and anything over itself is 1.. qed. (edited)
 
 lightandlight [5:59 PM]  
-First, prove -a * b = -(a * b) (edited)
+First, prove `-a * b = -(a * b)` (edited)
 
 jonschoning [5:59 PM]  
 Since there are many many ways to show this, there is no one special way
@@ -91,7 +92,7 @@ risto [6:04 PM]
 Negative one times any number is equal to the additive inverse of that number.
 
 [6:04]  
--1 * x = (-x)
+`-1 * x = (-x)`
 
 lightandlight [6:04 PM]  
 PROVE IT
@@ -107,7 +108,7 @@ lightandlight [6:06 PM]
 I thought you wanted a proof hah
 
 [6:06]  
-> Show -1 * b = -b
+> Show `-1 * b = -b`
 
 haskellandchill [6:08 PM]  
 which axioms is the question
@@ -128,7 +129,7 @@ haskellandchill [6:10 PM]
 Subsystems of Second Order Arithmetic is an interesting book
 
 [6:11]  
-> given a theorem tau of ordinary mathematics, what is the weakest natural subsystem S(tau) of Z sub(2) in which tau is provable?
+> given a theorem `tau` of ordinary mathematics, what is the weakest natural subsystem `S(tau)` of `Z sub(2)` in which `tau` is provable?
 (edited)
 
 [6:12]  
