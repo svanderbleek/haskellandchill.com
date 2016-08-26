@@ -34,12 +34,12 @@ I don't actually know the group laws from memory haha
 haskellandchill [5:47 PM]  
 `-` is inverse of `+` which `*` distributes with id `1`:
 ```
-1 + -1 = 0
+-1 + 1 = 0
 -1 * 1 = -1
 -1 * 0 = 0
--1 * (1 + -1) = -1 * 0 = 0
--1 * (1 + -1) = -1 * 1 + -1 * -1 = -1 + -1 * -1
--1 + -1 * 1 = 0 
+-1 * (-1 + 1) = -1 * 0 = 0
+-1 * (-1 + 1) = -1 * -1 + -1 * 1 = -1 * -1 + -1
+-1 * -1 + -1 = 0 
 =>  -1 * -1 = 1
 ```
 (edited)
