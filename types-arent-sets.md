@@ -7,7 +7,7 @@ This is the bit-sequence concept of types.
 01011001
 ```
 
-These bits could be a `string` or `int` depending on how we interpret them. Let's label with type `int`.
+These bits could be a `string` or `int` depending on which type we assign them. Let's label it with type `int`.
 
 ```
 01011001:int
@@ -21,7 +21,7 @@ Contrast that with `string`.
 > 'a'
 ```
 
-Extrapolating from this you can say the `string` type is all possible bits that are be interpretted as strings.
+Extrapolating from this you can say the `string` type is all possible bit-sequences that are interpretted as strings.
 
 ```
 01011001:string
