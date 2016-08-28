@@ -82,9 +82,13 @@ asserted string.
 ... waits forever ...
 ```
 
-Clearly `f 1` is not a bit string, but it is of type `string` by definition.
+Clearly `f 1` is not a bit string, but it is of type `string` by definition. As there are many ways we can inhabit the possibility of providing a value of type `string`, including those ways that may not actually provide a value, there is no unstructured set of values to support the type `string`. 
 
-As there are many ways we can inhabit the possibility of providing a value of type `string`, including those ways that may not actually provide a value, there is no concrete set of values to support the type `string`. We can model this condition in many ways, including the labelled sets used earlier but with extra values representing indeterminate computations and extra structure to handle these indeterminate values; or we can deal with types directly as their own abstraction. We abstract from sets of values to the concept of types. This is how we move beyond sets and into domains. This is the beginning of type theory.
+We can model this condition in many ways, including the labelled sets used earlier but with extra values representing indeterminate computations and extra structure to handle these indeterminate values; or we can deal with types directly as their own abstraction. Modeling with sets quickly gets out of hand when we try to represent the type of functions, that is the set of types corresponding to possible input and output assignments. 
+
+We can't determine if a function has set membership in its type without evaluating all possible input values and checking the resulting output values. Crucially we don't know how long to wait for an output after providing an input. When we treat functions as type assertions we are no longer bothered by this, we simply call it an undecidable assertion in a modal logic, and trust in the type signature of our function. A modal logic is a logic with additional qualities about assertions other than truth-quality, such as decidability.
+
+We abstract from sets of values to the concept of types. By using types we can perform inferences about functions that don't rely on set membership but are composible statements in a logic. This is how we move beyond sets and into domains. This is the beginning of type theory.
 
 ## Postscript
 
