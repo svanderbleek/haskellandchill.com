@@ -1,7 +1,7 @@
 ## Types of bits
 
 A simple concept of a type is directly related to the values that inhabit it.
-This is the sequence of bits concept of type familar to those who
+This is the bit-sequence concept of type familar to those who
 have done something like assembly.
 
 ```
