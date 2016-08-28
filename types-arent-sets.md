@@ -53,7 +53,7 @@ But this is a boring world where nothing happens.
 
 ## Types and functions
 
-Introducing functions changes this. Functions are types themselves that exchange values of one type for values of another type. Because of the semantics of this exchange, types can no longer be seen as sets of values. What are they then?
+Introducing functions changes this. Functions are types themselves that exchange values of one type for values of another type.
 
 A function assigns an input to an output when the input is of an acceptable type for the function. This assignment is an assertion about types. For me to say I have a function from `int` to `string`
 is to make the assertion that I can receive an `int` value and provide a `string` value in return.
