@@ -24,7 +24,7 @@ s:string.01011001
 > 'a'
 ```
 
-Extrapolating from this you can say the `string` type is all bits that can be interpretted as strings.
+Extrapolating from this you can say the `string` type is all possible bits that are be interpretted as strings.
 
 ```
 a:string.01011001
