@@ -13,8 +13,8 @@ cdabbbaaac
 And we can name sentences.
 
 ```
-s1. cddddaa
-s2. dbba
+s. cddddaa
+f. dbba
 ```
 
 These sentences are unchanging. 
@@ -22,8 +22,8 @@ We want to be able to react to inputs by forming sentences based on inputs.
 We can do this through lambda abstraction, naming parameters for our sentences.
 
 ```
-s1 p. pa
-s2 p1 p2. asdp2fasdp1
+s p. pa
+s p r. asdpfasdr
 f a. a
 f a. b
 ```
@@ -43,6 +43,16 @@ f a. bab
 Computes the sentence `bab`. Let's try using `f` by introducing application. We apply `f` to `ccc` by juxtaposition.
 
 ```
+[0] f a. bab
 [1] f ccc
 [2] bcccb
+```
+
+These are simple one-step computations. We can introduce more dynamism by allowing inputs to express computations.
+
+```
+[0] f g. g b
+[1] f f
+[2] f b
+[3] b b
 ```
