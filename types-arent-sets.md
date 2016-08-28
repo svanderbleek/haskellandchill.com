@@ -1,4 +1,4 @@
-## Types of bits
+## Types and bits
 
 A simple concept of a type is directly related to the values that inhabit it.
 This is the bit-sequence concept of type familar to those who
@@ -52,7 +52,7 @@ It seems then that a type is a collection of values. If we only had constant exp
 that would be accurate. `string` or `int` would be the set of all possible bit configurations with their respective type labels.
 But this is a boring world where nothing happens.
 
-## Types of functions
+## Types and functions
 
 Introducing functions changes this. Functions are types that exchange values of one type for another. With functions types can no longer be seen as sets. What are they then?
 A function assigns an output to an input when the input is of an acceptable type for the function. For me to say I have a function from `int` to `string`
