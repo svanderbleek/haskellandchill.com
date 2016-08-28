@@ -46,7 +46,7 @@ To formalize:
 string ~ {b|b:string.bit-sequence}
 ```
 
-Or the type `string` is all `string` labeled bit-sequences.
+Or the type `string` is equivalent all bit-sequences labelled `string`.
 
 It seems then that a type is a collection of values. If we only had constant expressions of values
 that would be accurate. `string` or `int` would be the set of all possible bit configurations with their respective type labels.
