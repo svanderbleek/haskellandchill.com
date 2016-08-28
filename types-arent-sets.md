@@ -84,7 +84,7 @@ asserted string.
 
 Clearly `f 1` is not a bit string, but it is of type `string`. As there are many ways we can inhabit the possibility of providing a value of type `string` there is no concrete set of values to suppor the type `string`. We have abstracted into the concept of types which are unique ways of handling results of computation. This is how we move beyond the concept of sets and into domains. This is the beginning of type theory.
 
-## PostScript
+## Postscript
 
 Can we get to this concept another way? Certainly. If we consider parsing our constant bit values.
 
