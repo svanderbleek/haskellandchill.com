@@ -8,30 +8,36 @@ have done something like assembly.
 01011001
 ```
 
-This byte could be a `string` or `int` depending on how we interpret it. Let's give the value a label
+These bits could be a `string` or `int` depending on how we interpret them. Let's label the bits `i`
 and assign type `int`.
 
 ```
 i:int.01011001
+> i
 > 24
 ```
 
-Contrast that with string.
+Contrast that with `string`.
 
 ```
 s:string.01011001
+> s
 > 'a'
 ```
 
-Extrapolating from this you can say the `string` type is all bytes that can be interpretted as strings.
+Extrapolating from this you can say the `string` type is all bits that can be interpretted as strings.
 
 ```
 a:string.01011001
+> a
 > 'a'
 b:string.11100000
+> b
 > 'b'
 c:string.00100111
+> c
 > 'c'
+... and so on ...
 ```
 
 It seems that a type is then a collection of values, and if we only had constant expressions of values
@@ -64,7 +70,8 @@ We don't know that the function even terminates. We expect `f 1` (`f` applied to
 asserted string.
 
 ```
-> (f 1):string
+(f 1):string
+> f 1
 ... waits forever ...
 ```
 
