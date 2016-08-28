@@ -1,8 +1,7 @@
 ## Types and bits
 
-A simple concept of a type is directly related to the values that inhabit it.
-This is the bit-sequence concept of type familar to those who
-have done something like assembly.
+A simple concept of types directly relates a type to the set of values that inhabit that type.
+This is the bit-sequence concept of types.
 
 ```
 01011001
