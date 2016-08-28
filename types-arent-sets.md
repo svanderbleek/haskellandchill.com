@@ -82,7 +82,9 @@ asserted string.
 ... waits forever ...
 ```
 
-Clearly `f 1` is not a bit string, but it is of type `string` by definition. As there are many ways we can inhabit the possibility of providing a value of type `string`, including those ways that do not actually provide a value, there is no concrete set of values to support the type `string`. We can model this condition in many ways, including the same labelled sets used earlier with extra values representing computation and extra structure to handle these indeterminate values, or we can deal with types directly as their own abstraction. We abstract from sets of values to the concept of types. This is how we move beyond sets and into domains. This is the beginning of type theory.
+Clearly `f 1` is not a bit string, but it is of type `string` by definition.
+
+As there are many ways we can inhabit the possibility of providing a value of type `string`, including those ways that may not actually provide a value, there is no concrete set of values to support the type `string`. We can model this condition in many ways, including the labelled sets used earlier but with extra values representing indeterminate computations and extra structure to handle these indeterminate values; or we can deal with types directly as their own abstraction. We abstract from sets of values to the concept of types. This is how we move beyond sets and into domains. This is the beginning of type theory.
 
 ## Postscript
 
