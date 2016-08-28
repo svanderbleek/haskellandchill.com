@@ -71,7 +71,7 @@ We can see the internals of the constant function `a` here but often this is not
 f:int->string.[hidden]
 ```
 
-What is the nature of this assertion? Do we add to our set of values of type `string` the possible outcomes of assertions?
+What is the nature of this assertion? Do we add to our set of values of type `string` values representing possible outcomes of assertions?
 
 For example we don't know that the function even terminates. We expect `f 1` (`f` applied to `1`) to be of type `string` but we may never finally receive the
 asserted string.
@@ -82,7 +82,7 @@ asserted string.
 ... waits forever ...
 ```
 
-Clearly `f 1` is not a bit string, but it is of type `string`. As there are many ways we can inhabit the possibility of providing a value of type `string` there is no concrete set of values to suppor the type `string`. We have abstracted into the concept of types which are unique ways of handling results of computation. This is how we move beyond the concept of sets and into domains. This is the beginning of type theory.
+Clearly `f 1` is not a bit string, but it is of type `string`. As there are many ways we can inhabit the possibility of providing a value of type `string`, there is no concrete set of values to support the type `string`. We have abstracted from sets of values to the concept of types which are unique ways of handling results of computation. This is how we move beyond the concept of sets and into domains. This is the beginning of type theory.
 
 ## Postscript
 
