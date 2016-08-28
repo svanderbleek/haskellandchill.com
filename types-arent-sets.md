@@ -99,4 +99,4 @@ X < 5
 
 Where `X` is a random variable. This is different from `x < 5` where `x` is a single, fixed outcome with no additional structure.
 
-This is abstraction as reification, introducing a new conceptual level where ideas are values that can be manipulated directly. Types are what we call our abstraction of values that our programs take as input and produce as results.
+This is abstraction as reification, introducing a new conceptual level where ideas are values that can be manipulated directly. Types are what we call our abstraction of the relationship between values that our programs take as input and produce as results.
