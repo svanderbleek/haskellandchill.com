@@ -52,9 +52,9 @@ that would be accurate. `string` or `int` would be the set of all possible bit c
 
 ## Types and functions
 
-Introducing functions changes this. Functions are compound types that exchange values of one type for values of another type. A naive view of functions is that of a fully specified mapping between sets, assigning each element in the input set to an element in the output set.
+Introducing functions changes this. Functions are compound types that exchange values of one type for values of another type. A naive view of functions is that of a fully specified mapping between sets, assigning each value in the input set to a value in the output set.
 
-A function assigns an an output value of the output type when the input value is of the input type for the function. This assignment can be interpreted as an assertion about types. When I say that I have a function from `int` to `string`
+Thus a function assigns an an output value of the output type when the input value is of the input type for the function. This assignment can be interpreted as an assertion about types. When I say that I have a function from `int` to `string`
 I also make the assertion that I can receive an arbitrary `int` value and provide a determinate `string` value in return.
 
 ```
@@ -63,14 +63,14 @@ a i. 'a': int -> string
 > 'a'
 ```
 
-Function `a: int -> string` has type `int -> string` and thus asserts that it returns type `string` when given an `int`. Since `a` simply returns the `string` `'a'` for all inputs we say this assertion is true.
-This is a special case because we can see the internals of `a`, but often this is not the case. We more generally have just the opaque assertion the function implies.
+Function `a i. 'a'` has type `int -> string`, asserting that it returns type `string` when given an `int`. Since `a` simply returns the `string` `'a'` for all inputs we can easily see that this assertion is true.
+This is a special case because we can see the internals of `a`, but often this is not the case. We more generally have just the assertion the function type implies.
 
 ```
 f i. [hidden]: int -> string
 ```
 
-What is the nature of this assertion? We can feed the function an input and check the result, but what if we don't receive a result? Should we also represent this as elment of the type set `string`?
+What is the nature of this assertion? We can feed the function an input and check the result, but what if we don't receive a result? Should we also represent this a value of the type-as-set `string`?
 
 For example we don't know that the function even terminates. We expect `f 1` (`f` applied to `1`) to be of type `string` but we may never finally receive the
 asserted string.
@@ -83,11 +83,11 @@ asserted string.
 
 Clearly `f 1` is not a bit string, but it is of type `string` by definition. As there are many ways we can inhabit the possibility of providing a value of type `string`, including those ways that may not actually provide a value, there is no unstructured set of values to support the type `string`.
 
-We can model this condition in many ways, including the labelled sets used earlier but with extra values representing indeterminate computations and extra structure to handle these indeterminate values; or we can deal with types directly as their own abstraction. Modeling with sets quickly gets out of hand when we try to represent the type of functions, that is the set of types corresponding to possible input and output assignments. 
+We can model this condition in many ways, including the labelled sets used earlier but with extra values representing indeterminate computations and extra structure on our mappings between sets that handle these indeterminate values; or we can deal with types directly as their own abstraction. Modeling with sets quickly gets out of hand when we try to represent the type of functions, that is the set of types corresponding to possible input and output assignments. 
 
-We can't determine if a function has set membership in its type-as-set without evaluating all possible input values and checking the resulting output values. Crucially we don't know how long to wait for outputs after providing inputs. When we treat functions as type assertions we are no longer bothered by this, we simply call it an undecidable assertion in a modal logic, and treat in the type of our function as an assertion that can be disproved and proved, but not proved in general. A modal logic is a logic with additional qualities about assertions other than truth-quality, such as decidability.
+We can't determine if a function has set membership in its type-as-set without evaluating all possible input values and checking the resulting output values. Crucially we don't know how long to wait for outputs after providing inputs. When we treat functions as type assertions we are no longer bothered by this, we simply call it an undecidable assertion in a modal logic, and treat in the type of our function as an assertion that can potentially be disproved and proved, but not proved in general. A modal logic is a logic with additional qualities of assertions other than truth-quality, such as decidability.
 
-We abstract from sets of values to the concept of types. By using types we can perform inferences about functions that don't rely on set membership but are composible statements in a logic. This is how we move beyond sets and into domains. This is the beginning of type theory.
+So we abstract from sets of values to the concept of types. By using types we can perform inferences about functions that don't rely on set membership but are composible statements in a logic. This is how we move beyond sets and into domains. This is the beginning of type theory.
 
 ## Postscript
 
