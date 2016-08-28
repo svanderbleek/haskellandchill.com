@@ -66,3 +66,13 @@ asserted string.
 
 Clearly `f 1` is not a bit string, but it is of type `string`. This is how we move beyond the concept of sets and into domains.
 This is the beginning of type theory.
+
+## PostScript
+
+Can we get to this concept another way? Certainly. If we consider parsing our constant bit values.
+
+```
+i:int.1010011101001...
+```
+
+The ellipses denote that we have parsing still to do. We don't know if we will ever finish parsing so a similar argument results. Sets become something more interesting when we introduce computation, which contains the idea of termination. Types then abstract computability and we can develop an algebra of types as an algebra of computability.
