@@ -6,8 +6,8 @@ have done something like assembly.
 01011001
 ```
 
-This byte could be a string or number depending on how we interpret it. Let's give the value a label
-and assign type number.
+This byte could be a `string` or `int` depending on how we interpret it. Let's give the value a label
+and assign type `int`.
 
 ```
 i:int.01011001
