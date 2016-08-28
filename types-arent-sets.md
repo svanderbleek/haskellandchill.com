@@ -54,8 +54,9 @@ But this is a boring world where nothing happens.
 
 ## Types and functions
 
-Introducing functions changes this. Functions are types that exchange values of one type for another. With functions types can no longer be seen as sets. What are they then?
-A function assigns an output to an input when the input is of an acceptable type for the function. For me to say I have a function from `int` to `string`
+Introducing functions changes this. Functions are types themselves that exchange values of one type for values of another type. Because of the semantics of this exchange, types can no longer be seen as sets of values. What are they then?
+
+A function assigns an input to an output when the input is of an acceptable type for the function. This assignment is an assertion about types. For me to say I have a function from `int` to `string`
 is to make the assertion that I can receive an `int` value and provide a `string` value in return.
 
 ```
@@ -64,15 +65,14 @@ a:int->string.'a'
 > 'a'
 ```
 
-So function `a:int->string` has type `int->string` and asserts it returns type `string` when given an `int`.
-We can see the internals of the constant function `a` here but often this is not the case, we just have the opaque assertion.
+So function `a:int->string` has type `int->string` and thus asserts that it returns type `string` when given an `int`.
+We can see the internals of the constant function `a` here but often this is not the case. We more generally just have the opaque assertion.
 
 ```
 f:int->string.[hidden]
 ```
 
-What is the nature of this assertion? It is not a concrete set
-but an abstraction. The abstraction is a way of dealing with our ignorance of the actual function definition.
+What is the nature of this assertion? Do we add to our set of values of type `string` the possible outcomes of assertions?
 
 For example we don't know that the function even terminates. We expect `f 1` (`f` applied to `1`) to be of type `string` but we may never finally receive the
 asserted string.
@@ -83,8 +83,7 @@ asserted string.
 ... waits forever ...
 ```
 
-Clearly `f 1` is not a bit string, but it is of type `string`. This is how we move beyond the concept of sets and into domains.
-This is the beginning of type theory.
+Clearly `f 1` is not a bit string, but it is of type `string`. As there are many ways we can inhabit the possibility of providing a value of type `string` there is no concrete set of values to suppor the type `string`. We have abstracted into the concept of types which are unique ways of handling results of computation. This is how we move beyond the concept of sets and into domains. This is the beginning of type theory.
 
 ## PostScript
 
