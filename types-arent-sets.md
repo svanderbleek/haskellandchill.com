@@ -35,7 +35,7 @@ c:string.00100111
 ```
 
 It seems that a type is then a collection of values, and if we only had constant expressions of values
-that would be accurate. `string` or `int` would be the set of all possible bit configurations with their respective labels.
+that would be accurate. `string` or `int` would be the set of all possible bit configurations with their respective type labels.
 This is a boring world.
 
 ## Types of functions
