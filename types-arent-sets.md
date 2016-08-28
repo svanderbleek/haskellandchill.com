@@ -92,14 +92,6 @@ We abstract from sets of values to the concept of types. By using types we can p
 
 ## Postscript
 
-Can we get to this concept another way? Certainly. If we consider parsing our constant bit values.
-
-```
-i:int.1010011101001...
-```
-
-The ellipses denote that we have parsing still to do. We don't know if we will ever finish parsing so a similar argument results (parsing can also be seen as a function `f:bit->int`). Sets become something more interesting when we introduce computation, which contains the idea of termination. Types then abstract computability and we can develop an algebra of types as an algebra of computability. 
-
 The abstraction we make with types is similar to abstractions like probability. We invent an abstraction for something intangible and indeterminate then manipulate it through the abstraction. A probability distrubtion over outcomes can stand in for outcomes in statements about outcomes, like that an outcome is less than a certain value.
 
 ```
