@@ -1,7 +1,7 @@
 ## Types of bits
 
 A simple concept of a type is directly related to the values that inhabit it.
-This is the binary or bit-style concept of type familar to those who
+This is the sequence of bits concept of type familar to those who
 have done something like assembly.
 
 ```
@@ -40,33 +40,41 @@ c:string.00100111
 ... and so on ...
 ```
 
-It seems that a type is then a collection of values, and if we only had constant expressions of values
+To formalize:
+
+```
+string ~ {b|b:string.bit-sequence}
+```
+
+Or the type `string` is all `string` labeled bit-sequences.
+
+It seems then that a type is a collection of values. If we only had constant expressions of values
 that would be accurate. `string` or `int` would be the set of all possible bit configurations with their respective type labels.
-This is a boring world.
+But this is a boring world where nothing happens.
 
 ## Types of functions
 
-Introducing functions changes this. Types can no longer be seen as sets. What are they then?
-A function assigns an output type to an input type. For me to say I have a function from `int` to `string`
-is to make the assertion that I can receive an `int` value and provide a `string` in return.
+Introducing functions changes this. Functions are types that exchange values of one type for another. With functions types can no longer be seen as sets. What are they then?
+A function assigns an output to an input when the input is of an acceptable type for the function. For me to say I have a function from `int` to `string`
+is to make the assertion that I can receive an `int` value and provide a `string` value in return.
 
 ```
-f:int->string.'a'
-> f 1
+a:int->string.'a'
+> a 1
 > 'a'
 ```
 
-So function `f:int->string` has type `int->string` and asserts it returns type `string` when given an `int`.
-We can see the internals of the function here but often this is not the case, we just have the contract.
+So function `a:int->string` has type `int->string` and asserts it returns type `string` when given an `int`.
+We can see the internals of the constant function `a` here but often this is not the case, we just have the opaque assertion.
 
 ```
 f:int->string.[hidden]
 ```
 
-What is the nature of this assertion? It is a proposition, a logical statement. It is not a concrete set
-but an abstraction. The abstraction is our way of dealing with ignorance of the actual function definition.
+What is the nature of this assertion? It is not a concrete set
+but an abstraction. The abstraction is a way of dealing with our ignorance of the actual function definition.
 
-We don't know that the function even terminates. We expect `f 1` (`f` applied to `1`) to be of type `string` but we may never finally receive the
+For example we don't know that the function even terminates. We expect `f 1` (`f` applied to `1`) to be of type `string` but we may never finally receive the
 asserted string.
 
 ```
