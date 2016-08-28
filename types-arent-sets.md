@@ -7,49 +7,48 @@ This is the bit-sequence concept of types.
 01011001
 ```
 
-These bits could be a `string` or `int` depending on how we interpret them. Let's label the bits `i`
-and assign type `int`.
+These bits could be a `string` or `int` depending on how we interpret them. Let's label with type `int`.
 
 ```
-i:int.01011001
-> i
+01011001:int
 > 24
 ```
 
 Contrast that with `string`.
 
 ```
-s:string.01011001
-> s
+01011001:string
 > 'a'
 ```
 
 Extrapolating from this you can say the `string` type is all possible bits that are be interpretted as strings.
 
 ```
-a:string.01011001
-> a
+01011001:string
 > 'a'
-b:string.11100000
-> b
+11100000:string
 > 'b'
-c:string.00100111
-> c
+00100111:string
 > 'c'
 ... and so on ...
 ```
 
-To formalize:
+To formalize the type `string` is equivalent all bit-sequences labelled with type `string`.
 
 ```
-string ~ {b|b:string.bit-sequence}
+string ~ {b|bit-sequence:string}
 ```
 
-Or the type `string` is equivalent all bit-sequences labelled with type `string`.
+And the same for `int`.
 
-It seems then that a type is a collection of labelled values. If we only had constant expressions of values
-that would be accurate. `string` or `int` would be the set of all possible bit configurations with their respective type labels.
-But this is a boring world where nothing happens.
+```
+int ~ {b|bit-sequence:int}
+```
+
+These sets can be put in one-to-one correspondence but the use of labels means they are completely different entities. Types have opaque representation. You can't compare `bit-sequence:int` and `bit-sequence:string` directly without cheating.
+
+It seems then that a type is a collection of labelled values. If we only had fixed length expressions of values
+that would be accurate. `string` or `int` would be the set of all possible bit configurations of finite size with their respective type labels. But this is a boring world where nothing happens.
 
 ## Types and functions
 
@@ -59,16 +58,16 @@ A function assigns an an output value of the output type when the input value is
 I also make the assertion that I can receive an arbitrary `int` value and provide a determinate `string` value in return.
 
 ```
-a:int->string.'a'
+a i. 'a': int -> string
 > a 1
 > 'a'
 ```
 
-So function `a:int->string` has type `int->string` and thus asserts that it returns type `string` when given an `int`. Since `a` simply returns the `string` `'a'` for all inputs we say this assertion is true.
+Function `a: int -> string` has type `int -> string` and thus asserts that it returns type `string` when given an `int`. Since `a` simply returns the `string` `'a'` for all inputs we say this assertion is true.
 This is a special case because we can see the internals of `a`, but often this is not the case. We more generally have just the opaque assertion the function implies.
 
 ```
-f:int->string.[hidden]
+f i. [hidden]: int -> string
 ```
 
 What is the nature of this assertion? We can feed the function an input and check the result, but what if we don't receive a result? Should we also represent this as elment of the type set `string`?
