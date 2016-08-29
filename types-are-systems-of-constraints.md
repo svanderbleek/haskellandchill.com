@@ -14,7 +14,7 @@ f : A -> A
 a : A
 u : ?
 u = f a
-~>
+=>
 u : (A -> A) A
 u : A
 ```
@@ -26,8 +26,22 @@ f : ? -> A
 a : A
 u : A
 u = f a
-~>
+=>
 f : (? -> A) A
 f : A -> A
 ```
+
+or
+
+```
+f : ? -> ?
+a : A
+u : A
+u = f a
+=>
+f : (? -> ?) A
+f : A -> A
+```
+
+We can formalize this as unification
 
