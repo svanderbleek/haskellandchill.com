@@ -45,20 +45,27 @@ And the same for `int`.
 int ~ {b|bit-sequence:int}
 ```
 
-These sets can be put in one-to-one correspondence but the use of labels means they are completely different entities. Types have opaque representation. You can't compare `bit-sequence:int` and `bit-sequence:string` directly without cheating.
+These sets can be put in one-to-one correspondence but the use of labels means they are completely different entities. We don't take a raw bit-sequence and ask what type it is.
 
-It seems then that a type is a collection of labelled values. If we only had fixed length expressions of values
-that would be accurate. `string` or `int` would be the set of all possible bit configurations of finite size with their respective type labels. But this is a boring world where nothing happens.
+```
+1010010:?
+```
+
+Rather we assign types when we create values. The values for a type then have opaque representations. You can't compare `bit-sequence:int` and `bit-sequence:string` as bit-sequences. You need comparisions defined between the types `int` and `string`.
+
+It seems then that a type is equivalent to a set of labelled values. If we only had fixed length expressions of values
+this would be an acceptable stopping point. However something interesting happens when we start thinking about moving from values of one type to values of another type.
 
 ## Types and functions
 
-Introducing functions changes this. Functions are compound types that exchange values of one type for values of another type. A naive view of functions is that of a fully specified mapping between sets, assigning each value in the input set to a value in the output set.
+Functions are compound types that exchange values of one type for values of another type. A naive view of functions is that of a fully specified mapping between sets, assigning each value in the input set to a value in the output set.
 
 Thus a function assigns an an output value of the output type when the input value is of the input type for the function. This assignment can be interpreted as an assertion about types. When I say that I have a function from `int` to `string`
-I also make the assertion that I can receive an arbitrary `int` value and provide a determinate `string` value in return.
+I assert that I can receive an arbitrary `int` value and provide a determinate `string` value in return.
 
 ```
-a i. 'a': int -> string
+a : int -> string
+a i. 'a'
 > a 1
 > 'a'
 ```
@@ -67,7 +74,8 @@ Function `a i. 'a'` has type `int -> string`, asserting that it returns type `st
 This is a special case because we can see the internals of `a`, but often this is not the case. We more generally have just the assertion the function type implies.
 
 ```
-f i. [hidden]: int -> string
+f : int -> string
+f i. [hidden]
 ```
 
 What is the nature of this assertion? We can feed the function an input and check the result, but what if we don't receive a result? Should we also represent this a value of the type-as-set `string`?
