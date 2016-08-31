@@ -37,10 +37,10 @@ f < g
 forall x. (f x < g x)
 ```
 
-Partial functions can also be ordered by the set of values they are defined on using subset relations over the domain.
+Partial functions can also be ordered by the set of values they are defined on using subset order over the domain.
 
 ```
 f < g
 =>
-(all x. f x) < (all y. f y)
+exists x. g x && !f x
 ```
