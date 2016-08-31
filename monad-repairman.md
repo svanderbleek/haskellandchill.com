@@ -30,3 +30,13 @@ a -> c
 !=>
 c -> m b
 ```
+
+What do I know?
+
+```
+Monad m
+=>
+a -> m b ->
+b -> m c -> 
+c -> m c
+```
