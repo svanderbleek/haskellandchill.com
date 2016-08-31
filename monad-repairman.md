@@ -19,7 +19,7 @@ No it's more complex
 a -> m b
 b -> c
 =>
-c -> m c
+b -> m c
 ```
 
 Can't do this
@@ -29,6 +29,7 @@ a -> m b
 a -> c
 !=>
 c -> m b
+a -> m c
 ```
 
 What I know
@@ -39,6 +40,12 @@ m a
 a -> m a
 
 m m a -> m a
+
+a -> b ->
+m a -> m b
+
+m (a -> b) ->
+m a -> m b
 
 a -> m b ->
 m a -> m b
