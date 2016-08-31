@@ -34,8 +34,15 @@ c -> m b
 What do I know?
 
 ```
-Monad m
+m a
 =>
+a -> m a
+
+m m a -> m a
+
+a -> m b ->
+m a -> m b
+
 a -> m b ->
 b -> m c -> 
 c -> m c
