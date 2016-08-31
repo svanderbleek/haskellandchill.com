@@ -27,9 +27,9 @@ Recursion can be described with reuse of a function through name, which requires
 
 ## Fixpoints
 
-To work in theory of fixpoints we need the concept of an order, intuition for the positive integers under `<` is sufficient. We will use '<' to mean whichever order we are dealing with. We explicitly work with orders like the positive integers to give ourselves a well-founded base case like `0`. At the bottom of sets under subset order it would be the empty set). 
+To work in theory of fixpoints we need the concept of an order, intuition for the positive integers under `<` is sufficient. We will use `<` also to mean the order we are dealing with. We explicitly work with orders similar to the positive integers to give ourselves a well-founded base case like `0`. The empty set plays a similar role in subset order. 
 
-An arbitrary domain can be mapped into an ordered codomain using a function `f : D -> O`, the class of these functions can then be ordered based on their values in the codomain over each point in domain.
+An arbitrary domain is mapped to an ordered codomain using a function `f : D -> O`, the class of these functions can be ordered based on their values in the codomain over each point in domain.
 
 ```
 f < g ~ forall x. (f x < g x)
@@ -40,5 +40,3 @@ Partial functions can also be ordered by the set of values they are defined on u
 ```
 f < g ~ (x. f x) < (y. f y)
 ```
-
-We use `~` to denote a definition, and `quantifier variable. condition` to do things like assert `forall`, `exists`, or  simply collect all when no quantifier is present.
