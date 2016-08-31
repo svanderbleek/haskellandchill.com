@@ -31,7 +31,7 @@ a -> c
 c -> m b
 ```
 
-What do I know?
+What I know
 
 ```
 m a
