@@ -13,7 +13,7 @@ a -> b
 b -> m b
 ```
 
-No it's different
+No it's more complex
 
 ```
 a -> m b
