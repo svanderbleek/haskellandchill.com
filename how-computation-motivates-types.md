@@ -43,7 +43,8 @@ f a. bab
 Computes the sentence `bab`. Let's try using `f` by introducing application. We apply `f` to `ccc` by juxtaposition.
 
 ```
-[0] f a. bab
+f a. bab
+=>
 [1] f ccc
 [2] bcccb
 ```
@@ -51,7 +52,8 @@ Computes the sentence `bab`. Let's try using `f` by introducing application. We 
 These are simple one-step computations. We can introduce more dynamism by allowing inputs to express computations.
 
 ```
-[0] f g. g b
+f g. g b
+=>
 [1] f f
 [2] f b
 [3] b b
