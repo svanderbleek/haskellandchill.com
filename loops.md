@@ -32,11 +32,15 @@ To work in theory of fixpoints we need the concept of an order, intuition for th
 An arbitrary domain is mapped to an ordered codomain using a function `f : D -> O`, the class of these functions can be ordered based on their values in the codomain over each point in domain.
 
 ```
-f < g ~ forall x. (f x < g x)
+f < g
+=>
+forall x. (f x < g x)
 ```
 
 Partial functions can also be ordered by the set of values they are defined on using subset relations over the domain.
 
 ```
-f < g ~ (x. f x) < (y. f y)
+f < g
+=>
+(all x. f x) < (all y. f y)
 ```
