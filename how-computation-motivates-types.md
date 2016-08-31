@@ -7,13 +7,13 @@ Let's start with a finite alphabet.
 We can form sentences with this alphabet.
 
 ```
-cdabbbaaac
+cdabc
 ```
 
 And we can name sentences.
 
 ```
-s. cddddaa
+s. cdaa
 f. dbba
 ```
 
@@ -22,34 +22,33 @@ We want to be able to react to inputs by forming sentences based on inputs.
 We can do this through lambda abstraction, naming parameters for our sentences.
 
 ```
-s p. pa
-s p r. asdpfasdr
 f a. a
 f a. b
+f a. aa
 ```
 
-Now we have a basic notion of computation.
+Now we have a basic notion of computation. Take
 
 ```
 f a. b
 ```
 
-Computes the sentence `b` for any input. We haven't dealt with what using inputs in a sentence means either.
+This computes the sentence `b` for any input. Take
 
 ```
 f a. bab
 ```
 
-Computes the sentence `bab`. Let's try using `f` by introducing application. We apply `f` to `ccc` by juxtaposition.
+This computes the sentence `bab`. Let's use `f` by application. We apply `f` to `c`.
 
 ```
 f a. bab
 =>
-[1] f ccc
-[2] bcccb
+[1] f c
+[2] bcb
 ```
 
-These are simple one-step computations. We can introduce more dynamism by allowing inputs to express computations.
+These are simple one-step computations. We can introduce more dynamism by allowing inputs be computations and utilizing self-application.
 
 ```
 f g. g b
