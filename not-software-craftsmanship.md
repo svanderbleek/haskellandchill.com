@@ -15,6 +15,12 @@ by developing a consumer provider network, where we are flexible in our roles, s
 it’s not necessarily increasing the level, but finding the right abstraction, because our contracts between each other aren’t working
 I take your react module and have to custom fit it, I’ve already lost, we’ve lost together
 
+## Tools towards a better
+
+TODO
+- https://en.wikipedia.org/wiki/Cumulative_flow_diagram
+- finish product development flow
+
 1. The Machine That Changed the World: The Story of Lean Production
 2. "
 3. "
