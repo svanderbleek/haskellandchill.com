@@ -452,7 +452,7 @@ in `II` we have judgement `a:f a`
 the `a` before `:` is a value
 
 [11:48]  
-the `a` after `:` is a type
+after `:` the `a` is a type
 
 [11:48]  
 `value:type` is a type judgement
