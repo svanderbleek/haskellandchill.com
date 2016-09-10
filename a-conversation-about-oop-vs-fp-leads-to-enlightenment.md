@@ -298,7 +298,7 @@ haskellandchill [11:21 AM]
 any way if anyone isn’t solid on reading haskell type signatures
 
 [11:22]  
-you have an `a` a `b` and a `f a`
+you have an `a`, a `b`, and a `f a`
 
 [11:22]  
 you get an `f b`
@@ -310,7 +310,7 @@ haskellandchill [11:22 AM]
 thats normal functor
 
 [11:22]  
-you have an `a` a `b` and a `f b`
+you have an `a`, a `b`, and a `f b`
 
 katychuang [11:22 AM]  
 `f a` and `f b` are functions btw
@@ -319,7 +319,7 @@ haskellandchill [11:22 AM]
 you get a `f a`, that’s contra
 
 [11:22]  
-`f` is a type level function
+`f` is a type level function and `a` is a type
 
 katychuang [11:23 AM]  
 oh right that confused me
@@ -349,7 +349,7 @@ pedrofurla [11:24 AM]
 `f a`, a applied to f
 
 haskellandchill [11:24 AM]  
-we usually say a function is applied to it’s arguments
+we usually say a function is applied to its arguments
 
 [11:24]  
 but either way
