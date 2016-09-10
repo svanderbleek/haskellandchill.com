@@ -255,7 +255,8 @@ m [11:19 AM]
 parametricity is a good one
 
 haskellandchill [11:19 AM]  
-```a -> b -> f a -> f b
+```
+a -> b -> f a -> f b
 a -> b -> f b -> f a
 ```
 (edited)
@@ -282,13 +283,13 @@ yeah but as we are Haskell focused, we can just ignore all that :smile:
 which is awesome less stuff to learn
 
 pedrofurla [11:21 AM]  
-A <: B, F[A] <: F[B]
+`A <: B`, `F[A] <: F[B]`
 
 haskellandchill [11:21 AM]  
 god no please no
 
 pedrofurla [11:21 AM]  
-A <: B, F[B] <: F[A]
+`A <: B`, `F[B] <: F[A]`
 
 [11:21]  
 heheh
@@ -396,7 +397,8 @@ it’s hard for beginners to see where you are working with values, and where yo
 lots of Haskell examples use the same letter for the type and value so it’s easy to get confused
 
 [11:29]  
- ```name :: type level lamba calculus
+ ```
+name :: type level lamba calculus
 name value level lambda calculus
 ```
 
@@ -411,7 +413,8 @@ that just means I failed :disappointed: best done with a whiteboard
 
 [11:44]  
 `I`
-```f :: a -> …
+```
+f :: a -> …
 f a = …
 ```
 (edited)
@@ -421,7 +424,8 @@ those `a`’s mean different things
 
 [11:44]  
 `II`
-```f :: f a -> …
+```
+f :: f a -> …
 f a = …
 ```
 (edited)
@@ -466,8 +470,10 @@ sagar [11:51 AM]
 this is *very* useful
 
 [11:51]  
+```
 name :: type level lamba calculus
 name value level lambda calculus
+```
 
 haskellandchill [11:51 AM]  
 anyone can make a judgement
@@ -560,7 +566,7 @@ first you say ok it is of type `x`
 where `x` is a type variable
 
 sagar [11:54 AM]  
-so int x
+so `int x`
 
 haskellandchill [11:54 AM]  
 then you use unification to constrain the concrete type of type variable `x`
@@ -581,22 +587,23 @@ for example
 then you can infer type variable `x` is concrete type `Int`
 
 katychuang [11:56 AM]  
-added a Haskell snippet 
 -- this is how I read it
+```
 name :: [type level] [lamba calculus]
 name [value level] [lambda calculus]
-​
-​
+```
 -- this is what I think you mean
+```
 name :: a -- type level lamba calculus
 name = name -- value level lambda calculus (returns value)
-Add Comment Click to expand inline 8 lines
+```
 
 haskellandchill [11:56 AM]  
 ok thanks @katychuang let me clarify
 
 [11:56]  
- ```name :: [type level lamba calculus]
+ ```
+ name :: [type level lamba calculus]
 name [value level lambda calculus]
 ```
 
@@ -629,9 +636,6 @@ it’s fun to work through type constraint unification
 
 [11:58]  
 a few Haskell books have chapters on it that are very instructive
-
-[11:59]  
-unfortunately not Haskell From First Principles, point of contention between me and them
 
 sagar [11:59 AM]  
 i don't think i'm that comfortable yet, i just finished the lambda calculus stuff. I have an undergrad in electronics engineering from over 10 years ago so i'm pretty happy in mathland, programming land not so much unless we're working with PLC's
