@@ -560,7 +560,10 @@ first you say ok it is of type `x`
 where `x` is a type variable
 
 sagar [11:54 AM]  
-so `int x`
+so `int x` 
+
+-- note: sagar incorrectly used a value level variable in `int x` not a type variable
+-- a type variable in sagar's notation would be `x value-variable-name`
 
 haskellandchill [11:54 AM]  
 then you use unification to constrain the concrete type of type variable `x`
@@ -596,8 +599,8 @@ haskellandchill [11:56 AM]
 ok thanks @katychuang let me clarify
 
 [11:56]  
- ```
- name :: [type level lamba calculus]
+```
+name :: [type level lamba calculus]
 name [value level lambda calculus]
 ```
 
