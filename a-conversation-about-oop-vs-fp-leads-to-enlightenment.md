@@ -469,12 +469,6 @@ i don’t understand the part where you said “type judgement” - is the compi
 sagar [11:51 AM]  
 this is *very* useful
 
-[11:51]  
-```
-name :: type level lamba calculus
-name value level lambda calculus
-```
-
 haskellandchill [11:51 AM]  
 anyone can make a judgement
 
