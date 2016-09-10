@@ -195,7 +195,7 @@ haskellandchill [11:16 AM]
 well… it’s important, these are peoples livelihoods, it can get emotional
 
 [11:16]  
-I almost got kicked out of StrangeLoop so I’m adjusting my approach
+I almost got kicked out of a conference so I’m adjusting my approach
 
 pedrofurla [11:16 AM]  
 subtyping and parametricity has a lot of potential for really big mess
