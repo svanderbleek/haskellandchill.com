@@ -224,9 +224,6 @@ yes
 haskellandchill [11:17 AM]  
 definitely :thumbsup: (edited)
 
-m [11:18 AM]  
-this is more random appropriate
-
 katychuang [11:18 AM]  
 so what are these big words that were dropped in here
 
