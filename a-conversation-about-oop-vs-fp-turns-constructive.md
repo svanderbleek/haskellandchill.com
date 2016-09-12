@@ -280,13 +280,13 @@ yeah but as we are Haskell focused, we can just ignore all that :smile:
 which is awesome less stuff to learn
 
 pedrofurla [11:21 AM]  
-`A <: B`, `F[A] <: F[B]`
+`A <: B` => `F[A] <: F[B]`
 
 haskellandchill [11:21 AM]  
 god no please no
 
 pedrofurla [11:21 AM]  
-`A <: B`, `F[B] <: F[A]`
+`A <: B` => `F[B] <: F[A]`
 
 [11:21]  
 heheh
