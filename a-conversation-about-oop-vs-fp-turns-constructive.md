@@ -367,9 +367,6 @@ haskellandchill [11:25 AM]
 I know I’m right
 
 [11:25]  
-thanks :slightly_smiling_face:
-
-[11:25]  
 a type constructor is a kind of type level function
 
 [11:25]  
