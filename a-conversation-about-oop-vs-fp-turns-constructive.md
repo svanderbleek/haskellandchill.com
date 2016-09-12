@@ -105,7 +105,7 @@ katychuang [11:06 AM]
 :smiley:
 
 horrorcheck [11:06 AM]  
-(that doesn’t mean I’m going to use Scala — I like hotdogs and ice cream but I’m not eating hot dog-flavored ice cream)
+that doesn’t mean I’m going to use Scala — I like hotdogs and ice cream but I’m not eating hot dog-flavored ice cream
 
 katychuang [11:06 AM]  
 haha good analogy
