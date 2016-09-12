@@ -1,5 +1,4 @@
 
-sagar [10:47 AM]  
 why is that, why is OOP trash
 
 katychuang [10:48 AM]  
