@@ -17,6 +17,15 @@ I take your react module and have to custom fit it, I’ve already lost, we’ve
 
 ## Tools towards a better
 
+## Beautiful Code
+
+> Beautiful code is short and concise, so if you were to give
+that code to another programmer the would say, "oh, that's
+well written code." It's much like as if you were writting a
+poem. (4)
+
+There's a whole poorly thought out cottage industry that has sprung up around "Beautiful Code". Sorry, code is not poetry and the movement is a lie. Code is a science not an art. There is no beauty in code except that which exhibits correctness.
+
 TODO
 - https://en.wikipedia.org/wiki/Cumulative_flow_diagram
 - finish product development flow
@@ -24,3 +33,4 @@ TODO
 1. The Machine That Changed the World: The Story of Lean Production
 2. "
 3. "
+4. Santiago Gonzalez ... somewhere
