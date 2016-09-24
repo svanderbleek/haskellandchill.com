@@ -29,6 +29,7 @@ There's a whole poorly thought out cottage industry that has sprung up around "B
 TODO
 - https://en.wikipedia.org/wiki/Cumulative_flow_diagram
 - finish product development flow
+- http://www.paulgraham.com/knuth.html
 
 1. The Machine That Changed the World: The Story of Lean Production
 2. "
