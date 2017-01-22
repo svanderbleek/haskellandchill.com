@@ -24,7 +24,7 @@ fmap id ~ id
 But
 
 ```
-fmap id (T1 d)
+fmap id (T1 a)
 = T2 a
 \= T1 a
 =>
