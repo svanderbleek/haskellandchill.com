@@ -14,7 +14,8 @@ map :: (a' -> b') -> [a'] -> [b']
 
 creates constraints
 
-```t a ~ b''
+```
+t a ~ b''
 a ~ c
 ((->) [a']) ~ b''
 ```
