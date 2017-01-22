@@ -8,7 +8,7 @@ T c d
 instance Functor (T c) where
   fmap :: (a -> b) -> f a -> f b
   fmap f (D a) =
-    A (f a)
+    C (f a)
 ```
 
 Why?
