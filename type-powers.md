@@ -87,6 +87,8 @@ interface F<S<T>> {
 }
 ```
 
+# Super powers
+
 ```
 interface N<B<T>, A<T>> { 
   B<T> natural(A<T> a);
