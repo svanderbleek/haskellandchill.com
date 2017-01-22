@@ -14,6 +14,8 @@ interface I {
 }
 ```
 
+# for all interface
+
 ```
 interface I<A> {
   A f(A a);
@@ -28,6 +30,8 @@ interface I <A> {
   A f(A a);
 }
 ```
+
+# for all class
 
 ```
 public S<T> {
@@ -44,6 +48,8 @@ public S<T> {
   T f(T);
 }
 ```
+
+# for all interface over class
 
 ```
 interface I<S<T>> {
