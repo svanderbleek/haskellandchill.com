@@ -1,25 +1,32 @@
 Weird Functor
 
 ```
-T c d
-  = C c
-  | D d
+T a
+  = T1 a
+  | T2 a
 
-instance Functor (T c) where
-  fmap :: (a -> b) -> f a -> f b
-  fmap f (D a) =
-    C (f a)
+instance Functor T where
+  fmap :: (a -> b) -> t a -> t b
+  fmap f (T1 a) =
+    T2 (f a)
 ```
 
 Why?
 
 ```
-fmap :: (for all a. a -> a) -> f a -> f a
-fmap _ t = t
+fmap :: (for all t. for all a. (for all a. a -> a) -> t a -> t a)
+fmap id :: (for all t. for all a. t a -> t a)
+id :: (for all t. for all a. t a -> t a)
+=>
+fmap id ~ id
 ```
 
 But
 
 ```
-fmap id (D d) \= D d
+fmap id (T1 d)
+= T2 d
+\= T1 d
+=>
+fmap id \~ id
 ```
