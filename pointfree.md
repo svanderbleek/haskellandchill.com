@@ -1,6 +1,13 @@
-`sum . map :: (Num [b], Foldable ((->) [a])) => (a -> b) -> [b]`
+explain
 
-```sum :: (Num a, Foldable t) => t a - > a
+```
+sum . map :: (Num [b], Foldable ((->) [a])) => (a -> b) -> [b]`
+```
+
+by definition
+
+```
+sum :: (Num a, Foldable t) => t a - > a
 map :: (a' -> b') -> [a'] -> [b']
 . :: (a'' -> b'') -> (b'' -> c) -> (a'' -> c)
 ```
