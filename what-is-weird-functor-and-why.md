@@ -6,7 +6,7 @@ T a
   | T2 a
 
 instance Functor T where
-  fmap :: (a -> b) -> t a -> t b
+  fmap :: (a -> b) -> T a -> T b
   fmap f (T1 a) =
     T2 (f a)
 ```
