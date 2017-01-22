@@ -1,4 +1,4 @@
-Weird Functor
+Data constructor changing functor:
 
 ```
 T a
@@ -11,7 +11,7 @@ instance Functor T where
     T2 (f a)
 ```
 
-Why?
+Why is it wrong? Because
 
 ```
 fmap :: (for all t. for all a. (for all a. a -> a) -> t a -> t a)
