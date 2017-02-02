@@ -1,8 +1,10 @@
 ## Java 2020
 
-This is not the Java of Today.
+Generics did not always exist in Java. Having them increases what you can express about the relationships between types. As Java continues to advance it may soon add further levels of type quantification. I want to discuss what we have now for types in Java and what it gives us while highlighting what we may have in the future and the type powers that will give us.
 
-## Warmup
+## Concrete Types
+
+We are pretty comfortable with concrete types and the kind of errors they prevent. You can avoid writing tests that you would have to write in a dynamic language thanks to compile time checking.
 
 ```
 public T {}
@@ -14,7 +16,11 @@ interface I {
 }
 ```
 
-# for all interface
+# Generic Types - Type Variables
+
+Generic types let us take the familar idea of a variable and use it at the type level. The variables themselves can be thought of having a type at a level higher as we will discuss later. Allowing a variable is a form of quantification, specifically saying for all possible types. We can constrain the types available by using additional syntax.
+
+## for all interface
 
 ```
 interface I<A> {
@@ -31,7 +37,7 @@ interface I <A> {
 }
 ```
 
-# for all class
+## for all class
 
 ```
 public S<T> {
@@ -67,7 +73,16 @@ interface I <S<T>> {
 }
 ```
 
-# Need More Power
+# for all constrained
+
+```
+T<? extends I>
+```
+
+
+# More Power
+
+Unfortunately today's Java can't express type variables that can be applied to other types, but we can straightforwardly talk about it using Java syntax.
 
 ```
 interface F<S<T>> {
@@ -88,6 +103,8 @@ interface F<S<T>> {
 ```
 
 # Super powers
+
+We can transform a tree to a list many ways, these transformations of T<A> to L<A> are structure changing transformations that preserve values.
 
 ```
 interface N<B<T>, A<T>> { 
