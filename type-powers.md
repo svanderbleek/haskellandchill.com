@@ -18,7 +18,7 @@ interface I {
 
 ### Argument Against
 
-> No. A thousand times: NO. Type models do not specify behavior. The correctness of your type model has no bearing on the correctness of the behavior you have specified. At best the type system will prevent some mechanistic failures of representation (e.g. Double vs. Int); but you still have to specify every single bit of behavior; and you still have to test every bit of behavior.
+> Type models do not specify behavior. The correctness of your type model has no bearing on the correctness of the behavior you have specified. At best the type system will prevent some mechanistic failures of representation (e.g. Double vs. Int); but you still have to specify every single bit of behavior; and you still have to test every bit of behavior.
 
 ## Generic Types - Type Variables
 
