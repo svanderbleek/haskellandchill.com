@@ -1,6 +1,6 @@
 ## Java 2020
 
-Generics did not always exist in Java. Having them increases what you can express about the relationships between types. As Java continues to advance it may soon add further levels of type quantification. I want to discuss what we have now for types in Java and what it gives us while highlighting what we may have in the future and the type powers that will give us.
+Generics did not always exist in Java. Having them increases what you can express about the relationships between types. As Java continues to advance it may soon add the ability to express deeper type relationships. I want to discuss what we have now for types in Java and what it gives us while highlighting what we may have in the future and the type powers that will give us.
 
 ## Concrete Types
 
@@ -104,7 +104,7 @@ interface F<S<T>> {
 
 ## Super powers
 
-We can transform a tree to a list many ways, these transformations of T<A> to L<A> are structure changing transformations that preserve values.
+We can transform a tree to a list many ways, these transformations of T<A> to L<A> are structure changing transformations that preserve values. We express this using invariants we expect the transformation to preserve.
 
 ```
 interface N<B<T>, A<T>> { 
