@@ -16,11 +16,11 @@ interface I {
 }
 ```
 
-# Generic Types - Type Variables
+## Generic Types - Type Variables
 
 Generic types let us take the familar idea of a variable and use it at the type level. The variables themselves can be thought of having a type at a level higher as we will discuss later. Allowing a variable is a form of quantification, specifically saying for all possible types. We can constrain the types available by using additional syntax.
 
-## for all interface
+### for all interface
 
 ```
 interface I<A> {
@@ -37,7 +37,7 @@ interface I <A> {
 }
 ```
 
-## for all class
+### for all class
 
 ```
 public S<T> {
@@ -55,7 +55,7 @@ public S<T> {
 }
 ```
 
-# for all interface over class
+## for all interface over class
 
 ```
 interface I<S<T>> {
@@ -73,14 +73,14 @@ interface I <S<T>> {
 }
 ```
 
-# for all constrained
+### for all constrained
 
 ```
 T<? extends I>
 ```
 
 
-# More Power
+## More Power
 
 Unfortunately today's Java can't express type variables that can be applied to other types, but we can straightforwardly talk about it using Java syntax.
 
@@ -102,7 +102,7 @@ interface F<S<T>> {
 }
 ```
 
-# Super powers
+## Super powers
 
 We can transform a tree to a list many ways, these transformations of T<A> to L<A> are structure changing transformations that preserve values.
 
