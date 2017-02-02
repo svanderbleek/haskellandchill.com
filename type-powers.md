@@ -20,6 +20,16 @@ interface I {
 
 > Type models do not specify behavior. The correctness of your type model has no bearing on the correctness of the behavior you have specified. At best the type system will prevent some mechanistic failures of representation (e.g. Double vs. Int); but you still have to specify every single bit of behavior; and you still have to test every bit of behavior.
 
+Concrete types don't specify behavior, especially in the presence of null, which acts as a value of every type.
+
+```
+public Integer f(Integer i) {}
+
+f(null); // :(
+```
+
+But we can do more.
+
 ## Generic Types - Type Variables
 
 > What if programmers could actually express their intent, and mark a list as being restricted to contain a particular data type? This is the core idea behind generics.
