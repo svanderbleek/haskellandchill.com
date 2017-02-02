@@ -30,7 +30,7 @@ f(null); // :(
 
 But we can do more.
 
-## Generic Types - Type Variables
+## Type Variables
 
 > What if programmers could actually express their intent, and mark a list as being restricted to contain a particular data type? This is the core idea behind generics.
 
