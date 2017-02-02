@@ -22,6 +22,8 @@ interface I {
 
 ## Generic Types - Type Variables
 
+> What if programmers could actually express their intent, and mark a list as being restricted to contain a particular data type? This is the core idea behind generics.
+
 Generic types let us take the familar idea of a variable and use it at the type level. The variables themselves can be thought of having a type at a level higher as we will discuss later. Allowing a variable is a form of quantification, specifically saying for all possible types. We can constrain the types available by using additional syntax.
 
 ### for all interface
