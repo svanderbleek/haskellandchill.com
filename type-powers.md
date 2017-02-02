@@ -16,6 +16,10 @@ interface I {
 }
 ```
 
+### Argument Against
+
+> No. A thousand times: NO. Type models do not specify behavior. The correctness of your type model has no bearing on the correctness of the behavior you have specified. At best the type system will prevent some mechanistic failures of representation (e.g. Double vs. Int); but you still have to specify every single bit of behavior; and you still have to test every bit of behavior.
+
 ## Generic Types - Type Variables
 
 Generic types let us take the familar idea of a variable and use it at the type level. The variables themselves can be thought of having a type at a level higher as we will discuss later. Allowing a variable is a form of quantification, specifically saying for all possible types. We can constrain the types available by using additional syntax.
@@ -133,3 +137,7 @@ public P implements N<S1<T>, S2<T>> {
   S2<T> natural(S1<T> s1) {}
 }
 ```
+
+## Arguing Types
+
+> Types impose coupling.  f(Int) is coupled to Int.  f(o) is only coupled to operations of o.
