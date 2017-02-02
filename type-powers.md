@@ -55,7 +55,7 @@ public S<T> {
 }
 ```
 
-## for all interface over class
+### for all interface over class
 
 ```
 interface I<S<T>> {
