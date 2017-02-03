@@ -36,6 +36,10 @@ But we can do more.
 
 Generic types let us take the familar idea of a variable and use it at the type level. The variables themselves can be thought of having a type at a level higher as we will discuss later. Allowing a variable is a form of quantification, specifically saying for all possible types. We can constrain the types available by using additional syntax.
 
+> When I write a function of type Int -> Double -> Int, I worry constantly about its correctness. When I write a function of type a -> b -> a, I no longer do. 
+
+Oddly enough, with more general types we gain certainty about implementation!
+
 ### for all interface
 
 ```
